@@ -1,0 +1,116 @@
+esound
+-------------------------------------------
+EsounD mixes multiple digitized audio streams and samples together for 
+playback by a single audio device. It also allows monitoring of mixed 
+output, and recording. Network connections to the daemon are supported 
+as well.
+
+Runtime requirements:
+  cygwin-1.5.24-2
+  libaudiofile0-0.2.6-2
+
+Build requirements:
+(besides corresponding devel packages)
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
+  binutils-20060817-1
+  cygport-0.2.9-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  libtool1.5-1.5.23a-2
+  make-3.81-1
+  sed-4.1.5-2
+
+Canonical homepage:
+  http://www.tux.org/~ricdude/EsounD.html
+
+Canonical download:
+  ftp://ftp.gnome.org/pub/GNOME/sources/esound/
+
+-------------------------------------------
+
+Build instructions:
+  unpack esound-0.2.36-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./esound-0.2.36-X.cygport all
+
+This will create:
+  /usr/src/esound-0.2.36-X.tar.bz2
+  /usr/src/esound-0.2.36-X-src.tar.bz2
+  /usr/src/libesound-devel-0.2.36-X.tar.bz2
+  /usr/src/libesound0-0.2.36-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /etc/esd.conf
+  /usr/bin/esd.exe
+  /usr/bin/esdcat.exe
+  /usr/bin/esdctl.exe
+  /usr/bin/esdfilt.exe
+  /usr/bin/esdloop.exe
+  /usr/bin/esdmon.exe
+  /usr/bin/esdplay.exe
+  /usr/bin/esdrec.exe
+  /usr/bin/esdsample.exe
+  /usr/share/doc/Cygwin/esound-0.2.36.README
+  /usr/share/doc/esound-0.2.36/AUTHORS
+  /usr/share/doc/esound-0.2.36/ChangeLog
+  /usr/share/doc/esound-0.2.36/COPYING.LIB
+  /usr/share/doc/esound-0.2.36/INSTALL
+  /usr/share/doc/esound-0.2.36/MAINTAINERS
+  /usr/share/doc/esound-0.2.36/NEWS
+  /usr/share/doc/esound-0.2.36/README
+  /usr/share/doc/esound-0.2.36/TODO
+  /usr/share/man/man1/esd.1.gz
+  /usr/share/man/man1/esdcat.1.gz
+  /usr/share/man/man1/esdctl.1.gz
+  /usr/share/man/man1/esdfilt.1.gz
+  /usr/share/man/man1/esdloop.1.gz
+  /usr/share/man/man1/esdmon.1.gz
+  /usr/share/man/man1/esdplay.1.gz
+  /usr/share/man/man1/esdrec.1.gz
+  /usr/share/man/man1/esdsample.1.gz
+
+Files included in the libesound0 package:
+
+  /usr/bin/cygesd-0.dll
+
+Files included in the devel package:
+
+  /usr/bin/esd-config
+  /usr/include/esd.h
+  /usr/lib/libesd.a
+  /usr/lib/libesd.dll.a
+  /usr/lib/libesd.la
+  /usr/lib/pkgconfig/esound.pc
+  /usr/share/aclocal/esd.m4
+  /usr/share/man/man1/esd-config.1.gz
+
+------------------
+
+Port Notes:
+
+----- version 0.2.36-2 -----
+Rebuilt with cygport.
+
+----- version 0.2.36-1 -----
+Upstream version bump.
+API documentation is no longer provided in the source package.
+
+----- version 0.2.35-1 -----
+New upstream release.  Changes:
+MMAP support was added for esddsp. GNU/kFreeBSD support was added. New
+default_options were added in the configuration file and environment
+variable. The ALSA default alias is used. The code was cleaned.  
+
+----- version 0.2.34-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
