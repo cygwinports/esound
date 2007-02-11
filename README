@@ -47,7 +47,8 @@ This will create:
 
 Files included in the binary package:
 
-  /etc/esd.conf
+  /etc/defaults/etc/esd.conf
+  /etc/postinstall/esound.sh
   /usr/bin/esd.exe
   /usr/bin/esdcat.exe
   /usr/bin/esdctl.exe
