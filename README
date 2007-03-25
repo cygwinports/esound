@@ -97,6 +97,9 @@ Files included in the devel package:
 Port Notes:
 
 ----- version 0.2.37-1 -----
+Applied Gentoo patches from 0.2.37-r1.
+
+----- version 0.2.37-1 -----
 Version bump.
 
 ----- version 0.2.36-2 -----
