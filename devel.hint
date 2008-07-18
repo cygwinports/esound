@@ -1,5 +1,5 @@
 category: Devel Audio Gnome
-requires: cygwin libaudiofile-devel
+requires: cygwin libesound0 libaudiofile-devel
 external-source: esound
 sdesc: "Enlightened Sound Daemon (development)"
 ldesc: "EsounD mixes multiple digitized audio streams and samples 

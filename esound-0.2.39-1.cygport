@@ -1,0 +1,28 @@
+inherit gnome.org
+
+DESCRIPTION="Enlightened Sound Daemon"
+HOMEPAGE="http://www.tux.org/~ricdude/EsounD.html"
+
+PKG_NAMES="${PN} lib${PN}0 lib${PN}-devel"
+PKG_HINTS="setup lib devel"
+PKG_CONTENTS[0]='--exclude=*-config* --exclude=aclocal etc/ usr/bin/*.exe usr/share/'
+PKG_CONTENTS[1]='usr/bin/*.dll'
+PKG_CONTENTS[2]="usr/bin/esd-config usr/include/ usr/lib/ usr/share/aclocal/
+				 usr/share/man/man1/esd-config.*"
+
+DIFF_EXCLUDES="esddsp"
+
+src_test() {
+	cd ${B}
+	ln -sf ${S}/test.wav ${B}
+	${B}/esd &
+	${S}/test-script
+	/bin/kill `pidof ${B}/esd` || error "could not kill esd"
+}
+
+src_install() {
+	cd ${B}
+	cyginstall
+
+	make_etc_defaults /etc/esd.conf
+}
