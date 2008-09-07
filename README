@@ -13,8 +13,8 @@ Build requirements:
 (besides corresponding devel packages)
   autoconf2.5-2.61-1
   automake1.10-1.10.1-1
-  binutils-20080523-2
-  cygport-0.3.12-1
+  binutils-20080524-2
+  cygport-0.4.0-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
   libtool-2.2.2-2
@@ -30,17 +30,17 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack esound-0.2.39-X-src.tar.bz2
+  unpack esound-0.2.40-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./esound-0.2.39-X.cygport all
+  cygport ./esound-0.2.40-X.cygport all
 
 This will create:
-  /usr/src/esound-0.2.39-X.tar.bz2
-  /usr/src/esound-0.2.39-X-src.tar.bz2
-  /usr/src/libesound-devel-0.2.39-X.tar.bz2
-  /usr/src/libesound0-0.2.39-X.tar.bz2
+  /usr/src/esound-0.2.40-X.tar.bz2
+  /usr/src/esound-0.2.40-X-src.tar.bz2
+  /usr/src/libesound-devel-0.2.40-X.tar.bz2
+  /usr/src/libesound0-0.2.40-X.tar.bz2
 
 -------------------------------------------
 
@@ -57,14 +57,14 @@ Files included in the binary package:
   /usr/bin/esdplay.exe
   /usr/bin/esdrec.exe
   /usr/bin/esdsample.exe
-  /usr/share/doc/esound-0.2.39/AUTHORS
-  /usr/share/doc/esound-0.2.39/ChangeLog
-  /usr/share/doc/esound-0.2.39/COPYING.LIB
-  /usr/share/doc/esound-0.2.39/INSTALL
-  /usr/share/doc/esound-0.2.39/MAINTAINERS
-  /usr/share/doc/esound-0.2.39/NEWS
-  /usr/share/doc/esound-0.2.39/README
-  /usr/share/doc/esound-0.2.39/TODO
+  /usr/share/doc/esound-0.2.40/AUTHORS
+  /usr/share/doc/esound-0.2.40/ChangeLog
+  /usr/share/doc/esound-0.2.40/COPYING.LIB
+  /usr/share/doc/esound-0.2.40/INSTALL
+  /usr/share/doc/esound-0.2.40/MAINTAINERS
+  /usr/share/doc/esound-0.2.40/NEWS
+  /usr/share/doc/esound-0.2.40/README
+  /usr/share/doc/esound-0.2.40/TODO
   /usr/share/man/man1/esd.1.gz
   /usr/share/man/man1/esdcat.1.gz
   /usr/share/man/man1/esdctl.1.gz
@@ -93,6 +93,9 @@ Files included in the devel package:
 ------------------
 
 Port Notes:
+
+----- version 0.2.40-1 -----
+Version bump.
 
 ----- version 0.2.39-1 -----
 Version bump.

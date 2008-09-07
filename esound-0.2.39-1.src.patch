@@ -1,9 +1,0 @@
---- origsrc/esound-0.2.39/audio_oss.c	2008-07-15 11:00:03.000000000 -0500
-+++ src/esound-0.2.39/audio_oss.c	2008-07-18 11:52:28.421875000 -0500
-@@ -1,5 +1,6 @@
- #include "config.h"
- 
-+#include <errno.h>
- #ifdef HAVE_MACHINE_SOUNDCARD_H
- #  include <machine/soundcard.h>
- #else
