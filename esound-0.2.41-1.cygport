@@ -1,0 +1,27 @@
+inherit gnome.org
+
+DESCRIPTION="Enlightened Sound Daemon"
+HOMEPAGE="http://www.tux.org/~ricdude/EsounD.html"
+
+PKG_NAMES="${PN} libesd0 libesd-devel"
+esound_CONTENTS='--exclude=*-config* --exclude=aclocal etc/ usr/bin/*.exe usr/share/'
+libesd0_CONTENTS="usr/bin/cygesd-0.dll"
+libesd_devel_CONTENTS="usr/bin/esd-config usr/include/ usr/lib/ usr/share/aclocal/
+                       usr/share/man/man1/esd-config.*"
+
+DIFF_EXCLUDES="esddsp"
+
+src_test() {
+	cd ${B}
+	ln -sf ${S}/test.wav ${B}
+	${B}/esd &
+	${S}/test-script
+	/bin/kill $(ps -s | grep "${B}/esd$" | awk '{print($1)}') || error "could not kill esd"
+}
+
+src_install() {
+	cd ${B}
+	cyginstall
+
+	make_etc_defaults /etc/esd.conf
+}

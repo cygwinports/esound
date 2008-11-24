@@ -1,7 +1,7 @@
-category: Libs Audio Gnome
-requires: cygwin libaudiofile0
+category: Audio
+requires: cygwin libesd0 libaudiofile-devel
 external-source: esound
-sdesc: "Enlightened Sound Daemon (runtime library)"
+sdesc: "Enlightened Sound Daemon (libdevel)"
 ldesc: "EsounD mixes multiple digitized audio streams and samples 
 together for playback by a single audio device. It also allows 
 monitoring of mixed output, and recording. Network connections to the 

@@ -1,6 +1,6 @@
-category: Audio Gnome
-requires: cygwin libaudiofile0 libesound0
-sdesc: "Enlightened Sound Daemon (daemon and utilities)"
+category: Audio
+requires: cygwin libaudiofile0 libesd0
+sdesc: "Enlightened Sound Daemon (daemon and clients)"
 ldesc: "EsounD mixes multiple digitized audio streams and samples 
 together for playback by a single audio device. It also allows 
 monitoring of mixed output, and recording. Network connections to the 
