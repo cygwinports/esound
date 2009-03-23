@@ -1,5 +1,5 @@
 category: Audio
-requires: cygwin libaudiofile0
+requires: cygwin libaudiofile0 libgcc1
 external-source: esound
 sdesc: "Enlightened Sound Daemon (runtime library)"
 ldesc: "EsounD mixes multiple digitized audio streams and samples 

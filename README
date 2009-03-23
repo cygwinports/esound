@@ -6,20 +6,22 @@ output, and recording. Network connections to the daemon are supported
 as well.
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  libaudiofile0-0.2.6-2
+  cygwin-1.7.0-44
+  libaudiofile0-0.2.6-10
+  libgcc1-4.3.2-2
 
 Build requirements:
 (besides corresponding devel packages)
-  autoconf2.5-2.63-1
-  automake1.10-1.10.1-2
+  autoconf2.5-2.63-10
+  automake1.10-1.10.1-10
   binutils-20080624-2
-  cygport-0.4.2-1
-  gawk-3.1.6-1
-  gcc-core-3.4.4-3
-  libtool-2.2.6a-1
-  make-3.81-1
+  cygport-0.9.6-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  libtool-2.2.7a-1
+  make-3.81-2
   sed-4.1.5-2
+  tcsh-6.16.00-1
 
 Canonical homepage:
   http://www.tux.org/~ricdude/EsounD.html
@@ -58,14 +60,13 @@ Files included in the binary packages:
   /usr/bin/esdplay.exe
   /usr/bin/esdrec.exe
   /usr/bin/esdsample.exe
-  /usr/share/doc/esound-0.2.41/AUTHORS
-  /usr/share/doc/esound-0.2.41/ChangeLog
-  /usr/share/doc/esound-0.2.41/COPYING.LIB
-  /usr/share/doc/esound-0.2.41/INSTALL
-  /usr/share/doc/esound-0.2.41/MAINTAINERS
-  /usr/share/doc/esound-0.2.41/NEWS
-  /usr/share/doc/esound-0.2.41/README
-  /usr/share/doc/esound-0.2.41/TODO
+  /usr/share/doc/esound/AUTHORS
+  /usr/share/doc/esound/ChangeLog
+  /usr/share/doc/esound/COPYING.LIB
+  /usr/share/doc/esound/MAINTAINERS
+  /usr/share/doc/esound/NEWS
+  /usr/share/doc/esound/README
+  /usr/share/doc/esound/TODO
   /usr/share/man/man1/esd.1.gz
   /usr/share/man/man1/esdcat.1.gz
   /usr/share/man/man1/esdctl.1.gz
@@ -93,39 +94,8 @@ Files included in the binary packages:
 
 Port Notes:
 
------ version 0.2.41-1 -----
-Version bump.
-
------ version 0.2.40-1 -----
-Version bump.
-
------ version 0.2.39-1 -----
-Version bump.
-
------ version 0.2.38-1 -----
-Version bump; esddsp.1 patch and most Gentoo patches incorporated upstream.
-
------ version 0.2.37-1 -----
-Applied Gentoo patches from 0.2.37-r1.
-
------ version 0.2.37-1 -----
-Version bump.
-
------ version 0.2.36-2 -----
-Rebuilt with cygport.
-
------ version 0.2.36-1 -----
-Upstream version bump.
-API documentation is no longer provided in the source package.
-
------ version 0.2.35-1 -----
-New upstream release.  Changes:
-MMAP support was added for esddsp. GNU/kFreeBSD support was added. New
-default_options were added in the configuration file and environment
-variable. The ALSA default alias is used. The code was cleaned.  
-
------ version 0.2.34-1 -----
-Initial release for Cygwin.
+----- version 0.2.41-10 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:

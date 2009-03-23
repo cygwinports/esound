@@ -1,5 +1,5 @@
 category: Audio
-requires: cygwin libaudiofile0 libesd0
+requires: cygwin libaudiofile0 libesd0 libgcc1
 sdesc: "Enlightened Sound Daemon (daemon and clients)"
 ldesc: "EsounD mixes multiple digitized audio streams and samples 
 together for playback by a single audio device. It also allows 
