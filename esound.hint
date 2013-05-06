@@ -1,7 +1,0 @@
-category: Audio
-requires: libesd0 pulseaudio
-sdesc: "Enlightened Sound Daemon clients"
-ldesc: "EsounD mixes multiple digitized audio streams and samples 
-together for playback by a single audio device. It also allows 
-monitoring of mixed output, and recording. Network connections to the 
-daemon are supported as well."

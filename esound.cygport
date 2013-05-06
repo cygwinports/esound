@@ -1,11 +1,21 @@
 inherit gnome.org
 
-DESCRIPTION="Enlightened Sound Daemon"
+NAME="esound"
+VERSION=0.2.41
+RELEASE=12
+CATEGORY="Audio"
+SUMMARY="Enlightened Sound Daemon clients"
+DESCRIPTION="EsounD mixes multiple digitized audio streams and samples together
+for playback by a single audio device. It also allows monitoring of mixed
+output, and recording. Network connections to the daemon are supported as well."
 HOMEPAGE="http://www.tux.org/~ricdude/EsounD.html"
 
-PKG_NAMES="${PN} libesd0 libesd-devel"
+PKG_NAMES="${NAME} libesd0 libesd-devel"
+esound_REQUIRES="pulseaudio"
 esound_CONTENTS='--exclude=*-config* --exclude=aclocal usr/bin/*.exe usr/share/'
+libesd0_SUMMARY="${SUMMARY%s} library (runtime)"
 libesd0_CONTENTS="usr/bin/cygesd-0.dll"
+libesd_devel_SUMMARY="${SUMMARY%s} library (development)"
 libesd_devel_CONTENTS="usr/bin/esd-config usr/include/ usr/lib/ usr/share/aclocal/
                        usr/share/man/man1/esd-config.*"
 
