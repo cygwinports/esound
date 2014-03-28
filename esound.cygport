@@ -11,7 +11,7 @@ output, and recording. Network connections to the daemon are supported as well."
 HOMEPAGE="http://www.tux.org/~ricdude/EsounD.html"
 
 PKG_NAMES="${NAME} libesd0 libesd-devel"
-esound_REQUIRES="pulseaudio"
+esound_REQUIRES="pulseaudio-esound-compat"
 esound_CONTENTS='--exclude=*-config* --exclude=aclocal usr/bin/*.exe usr/share/'
 libesd0_SUMMARY="${SUMMARY%s} library (runtime)"
 libesd0_CONTENTS="usr/bin/cygesd-0.dll"
